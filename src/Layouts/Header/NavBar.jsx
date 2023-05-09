@@ -11,7 +11,7 @@ function NavBar() {
   };
 
   return (
-    <div>
+    <div id="navbar">
       <nav className="container">
         <div className="container-fluid container" id="nav-bar">
           <div>

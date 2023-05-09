@@ -1,0 +1,117 @@
+.leftArrow:hover {
+    color: #FFB11B !important;
+    cursor: pointer;
+}
+
+.rightArrow:hover {
+    color: #FFB11B !important;
+    cursor: pointer;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 80%;
+    left: 47%;
+    z-index: 2;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 80%;
+    right: 47%;
+    z-index: 2;
+}
+
+.sliderContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 175px;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heroTitle {
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.heroPara {
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+
+.serviceBtn {
+    font-size: 20px;
+    text-decoration: none;
+    color: #001E58;
+    background-color: #FFB11B;
+    border: solid 2px #FFB11B;
+    padding: 13px 32px;
+    border-radius: 35px;
+}
+
+.serviceBtn:hover {
+    color: #001E58;
+    border: solid 2px #FFB11B;
+    background-color: rgba(255, 255, 255, 0);
+    color: #FFB11B;
+}
+
+@media screen and (max-width: 768px) {
+    .leftArrow {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        z-index: 2;
+    }
+
+    .rightArrow {
+        position: absolute;
+        top: 30%;
+        right: 40%;
+        z-index: 2;
+    }
+
+    .slideImageStyle {
+        width: 100%;
+        height: 226px !important
+    }
+
+    .sliderContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .heroTitle {
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    .heroPara {
+        font-size: 12px;
+        padding-bottom: 2px;
+    }
+    .serviceBtn {
+        font-size: 12px;
+        text-decoration: none;
+        color: #001E58;
+        background-color: #FFB11B;
+        border: solid 2px #FFB11B;
+        padding: 4px 15px;
+        border-radius: 35px;
+    }
+
+    .serviceBtn:hover {
+        color: #001E58;
+        border: solid 2px #FFB11B;
+        background-color: rgba(255, 255, 255, 0);
+        color: #FFB11B;
+    }
+}
