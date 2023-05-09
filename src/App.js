@@ -1,5 +1,6 @@
 import "./App.css";
 import NavBar from "./Layouts/Header/NavBar";
+import TopBar from "./Layouts/Header/TopBar";
 import Footer from "./Layouts/Footer/Footer";
 import Home from "./Pages/Home";
 import Services from "./Pages/Services";
@@ -12,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
+      <TopBar />
       <NavBar />
       <Router>
         <Routes>

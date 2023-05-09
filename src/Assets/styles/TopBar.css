@@ -1,0 +1,22 @@
+.contact-items {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 150px;
+}
+
+.contact-item {
+    color: #DDE8FF;
+}
+
+.item-text {
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+@media screen and (max-width:1200px) {
+    #top-bar {
+        display: none;
+    }
+}
