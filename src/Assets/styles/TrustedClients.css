@@ -14,20 +14,41 @@
     text-align: center;
     font-size: 30px;
     line-height: 45px;
+    margin-bottom: 25px;
 }
 
 .trustedTitle::after {
     content: "";
     height: 3px;
-    width: 80px;
+    width: 180px;
+    display: block;
     background-color: #FFB11B;
     position: relative;
-    top: 50px;
-    left: 150px;
+    top: 10px;
+    left: calc(50% - 90px);
 }
 
 .trustedClients {
-    width: 1232px;
-    height: 292px;
-    background-image: url("../img/trusted-clients.png");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.clientImage {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 576px) {
+    .trustedClientsWrapper {
+        color: #001E58;
+        padding: 45px 40px;
+    }
+
+    .trustedTitle {
+        text-align: center;
+        font-size: 24px;
+        line-height: 35px;
+    }
 }

@@ -11,12 +11,13 @@
 
 .connectTitle::after {
     content: "";
-    width: 80px;
+    width: 100px;
     height: 3px;
+    display: block;
     background-color: #FFB11B;
     position: relative;
     top: 10px;
-    left: 50%;
+    left: calc(50% - 50px);
 }
 
 .connectDesc {
@@ -91,4 +92,94 @@
 
 .findUs {
     padding-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftContainer {
+        width: 100%;
+    }
+
+    .rightContainer {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .emailContainer {
+        font-size: 20px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftContainer {
+        width: 100%;
+    }
+
+    .rightContainer {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .emailContainer {
+        font-size: 20px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .locationContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .connectUsWrapper {
+        background-color: #001E58;
+        padding: 45px 40px;
+    }
+
+    .connectTitle {
+        font-size: 22px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .locationContainer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .rightContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .emailContainer {
+        font-size: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }
