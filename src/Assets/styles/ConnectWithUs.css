@@ -2,3 +2,184 @@
     background-color: #001E58;
     padding: 65px 150px;
 }
+
+.connectTitle {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.connectTitle::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    display: block;
+    background-color: #FFB11B;
+    position: relative;
+    top: 10px;
+    left: calc(50% - 50px);
+}
+
+.connectDesc {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 40px 0 40px 0;
+}
+
+.contactContainer {
+    display: flex;
+}
+
+.locationContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address {
+    padding: 20px 0;
+}
+
+.leftContainer {
+    width: 72%;
+}
+
+.rightContainer {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emailContainer {
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.email {
+    padding-left: 10px;
+}
+
+.phoneContainer {
+    font-size: 20px;
+    text-align: center;
+}
+
+.callUs {
+    padding-left: 10px;
+}
+
+#email {
+    margin-bottom: 20px;
+}
+
+#phone {
+    margin-bottom: 20px;
+}
+
+.details {
+    font-size: 16px;
+}
+
+.find {
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #FBFBFB;
+}
+
+.findUs {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftContainer {
+        width: 100%;
+    }
+
+    .rightContainer {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .emailContainer {
+        font-size: 20px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftContainer {
+        width: 100%;
+    }
+
+    .rightContainer {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .emailContainer {
+        font-size: 20px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .locationContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .connectUsWrapper {
+        background-color: #001E58;
+        padding: 45px 40px;
+    }
+
+    .connectTitle {
+        font-size: 22px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .locationContainer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .rightContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .emailContainer {
+        font-size: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
